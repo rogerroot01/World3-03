@@ -1,8 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="World3-03">
-  <rect width="64" height="64" rx="10" fill="#f7f7f4"/>
-  <circle cx="32" cy="32" r="23" fill="#2f6f73"/>
-  <path d="M11 34c7-8 13-11 20-9 5 1 9 5 14 4 3-1 6-4 8-7 2 4 3 8 3 12 0 13-11 24-24 24S8 47 8 34h3z" fill="#d9c27f"/>
-  <path d="M18 23c5-7 11-11 18-13 10 2 18 10 19 20-4 1-8 1-12-1-8-4-13-7-25-6z" fill="#8fb8a5"/>
-  <circle cx="32" cy="32" r="23" fill="none" stroke="#202124" stroke-width="2"/>
-  <path d="M16 47c6-5 12-7 18-6 5 1 9 4 14 2" fill="none" stroke="#202124" stroke-width="2" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="World3-03 model icon">
+  <defs>
+    <radialGradient id="earth" cx="36%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#8fb8a5"/>
+      <stop offset="0.55" stop-color="#2f6f73"/>
+      <stop offset="1" stop-color="#152d33"/>
+    </radialGradient>
+    <linearGradient id="signal" x1="8" y1="48" x2="56" y2="16">
+      <stop offset="0" stop-color="#d9c27f"/>
+      <stop offset="1" stop-color="#b04a5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#101418"/>
+  <circle cx="32" cy="32" r="23" fill="url(#earth)"/>
+  <path d="M12 35c7-8 13-11 20-9 5 1 9 5 14 4 3-1 6-4 8-7 2 4 3 8 3 12 0 13-11 24-24 24S9 48 9 35h3z" fill="#d9c27f" opacity=".86"/>
+  <path d="M18 23c5-7 11-11 18-13 10 2 18 10 19 20-4 1-8 1-12-1-8-4-13-7-25-6z" fill="#93b7a3" opacity=".9"/>
+  <circle cx="32" cy="32" r="23" fill="none" stroke="#e7ece8" stroke-width="1.5"/>
+  <path d="M9 49c8-2 14-7 20-15s12-18 19-20" fill="none" stroke="url(#signal)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M12 48h40" stroke="#e7ece8" stroke-width="1.3" opacity=".55"/>
+  <path d="M16 44h7m4-4h7m4-5h7m4-6h7" stroke="#e7ece8" stroke-width="1.5" stroke-linecap="round" opacity=".75"/>
 </svg>

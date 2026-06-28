@@ -3,6 +3,83 @@ body {
   color: #202124;
 }
 
+.splash-screen {
+  align-items: center;
+  background: #080c10 url("splash.svg") center center / cover no-repeat;
+  bottom: 0;
+  color: #f7f7f4;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 1;
+  padding: 24px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 650ms ease, visibility 650ms ease;
+  visibility: visible;
+  z-index: 99999;
+}
+
+.splash-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.splash-panel {
+  max-width: 760px;
+  text-align: center;
+}
+
+.splash-logo {
+  height: 92px;
+  margin-bottom: 24px;
+  width: 92px;
+}
+
+.splash-eyebrow {
+  color: #d9c27f;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.splash-panel h1 {
+  color: #f7f7f4;
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.04;
+  margin: 0 0 18px;
+}
+
+.splash-copy {
+  color: #dce5e0;
+  font-size: 18px;
+  line-height: 1.45;
+  margin: 0 auto 16px;
+  max-width: 680px;
+}
+
+.splash-credit {
+  color: #aebbb6;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0 auto 26px;
+  max-width: 650px;
+}
+
+.splash-button {
+  background: #f7f7f4;
+  border: 0;
+  border-radius: 6px;
+  color: #101418;
+  font-weight: 700;
+  padding: 10px 18px;
+}
+
 .container-fluid {
   max-width: 1400px;
 }
@@ -83,6 +160,14 @@ body {
 }
 
 @media (max-width: 560px) {
+  .splash-panel h1 {
+    font-size: 36px;
+  }
+
+  .splash-copy {
+    font-size: 16px;
+  }
+
   .metric-row {
     grid-template-columns: 1fr;
   }

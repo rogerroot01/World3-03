@@ -120,6 +120,15 @@ def build():
         "while preserving the exact simulation result for the selected assumptions."
     )
 
+    doc.add_heading("Splash Screen and Icon", level=1)
+    doc.add_paragraph(
+        "The app opens with a dark splash screen titled MIT World3-03 Model. "
+        "The background uses stylized, faded model-trajectory lines to set the tone for a "
+        "systems-collapse scenario tool without using any official MIT seal or trademarked logo. "
+        "The custom app icon combines an earth form with a trajectory curve, signaling that the "
+        "application is an exploratory interface for the World3-03 model rather than an official MIT product."
+    )
+
     doc.add_heading("Scenario Presets", level=1)
     add_table(
         doc,

@@ -11,6 +11,8 @@ This folder is the publishable Shiny application root.
 - `data/python_standard_reference.csv`: Python reference run for parity checks.
 - `www/app.css`: app styling.
 - `www/logo.svg`: app icon.
+- `www/app-icon.svg`: larger custom icon used as favicon and splash icon.
+- `www/splash.svg`: dark splash-screen background.
 - `docs/World3-03_Shiny_App_User_Manual.docx`: user-facing manual.
 - `tools/write_manifest.R`: helper for generating `manifest.json`.
 

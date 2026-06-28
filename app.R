@@ -60,11 +60,45 @@ plot_lines <- function(df, vars, title, ylab = NULL, scale = 1) {
 ui <- fluidPage(
   tags$head(
     tags$link(rel = "stylesheet", type = "text/css", href = "app.css"),
-    tags$link(rel = "icon", type = "image/svg+xml", href = "logo.svg")
+    tags$link(rel = "icon", type = "image/svg+xml", href = "app-icon.svg"),
+    tags$script(HTML("
+      document.addEventListener('DOMContentLoaded', function() {
+        var close = function() {
+          var splash = document.getElementById('splash-screen');
+          if (!splash) return;
+          splash.classList.add('splash-hidden');
+          window.setTimeout(function() { splash.style.display = 'none'; }, 650);
+        };
+        var button = document.getElementById('splash-dismiss');
+        if (button) button.addEventListener('click', close);
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape') close();
+        });
+      });
+    "))
+  ),
+  div(
+    id = "splash-screen",
+    class = "splash-screen",
+    div(
+      class = "splash-panel",
+      tags$img(src = "app-icon.svg", class = "splash-logo", alt = ""),
+      div(class = "splash-eyebrow", "Scenario simulation cockpit"),
+      h1("MIT World3-03 Model"),
+      p(
+        class = "splash-copy",
+        "A Shiny interface for exploring population, resources, food, industrial output, pollution, human welfare, and ecological footprint trajectories."
+      ),
+      p(
+        class = "splash-credit",
+        "Model lineage: World3 / Limits to Growth. R implementation adapted from the local PyWorld3-03 source."
+      ),
+      actionButton("splash-dismiss", "Enter simulation", class = "btn btn-light splash-button")
+    )
   ),
   div(
     class = "app-header",
-    tags$img(src = "logo.svg", class = "app-logo", alt = ""),
+    tags$img(src = "app-icon.svg", class = "app-logo", alt = ""),
     h2("World3-03 Simulation Cockpit", class = "app-title")
   ),
   fluidRow(

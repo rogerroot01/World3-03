@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="World3-03 app icon">
+  <defs>
+    <radialGradient id="earth" cx="36%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#9dc4ad"/>
+      <stop offset="0.52" stop-color="#2f6f73"/>
+      <stop offset="1" stop-color="#10262c"/>
+    </radialGradient>
+    <linearGradient id="curve" x1="64" y1="392" x2="448" y2="120">
+      <stop offset="0" stop-color="#d9c27f"/>
+      <stop offset="1" stop-color="#b04a5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="88" fill="#101418"/>
+  <circle cx="256" cy="256" r="178" fill="url(#earth)"/>
+  <path d="M88 274c56-64 104-88 160-72 40 12 72 40 112 32 24-8 48-32 64-56 16 32 24 64 24 96 0 104-88 192-192 192S64 378 64 274h24z" fill="#d9c27f" opacity=".86"/>
+  <path d="M144 178c40-56 88-88 144-104 80 16 144 80 152 160-32 8-64 8-96-8-64-32-104-56-200-48z" fill="#93b7a3" opacity=".9"/>
+  <circle cx="256" cy="256" r="178" fill="none" stroke="#e7ece8" stroke-width="14"/>
+  <path d="M72 392c64-16 112-56 160-120s96-144 152-160" fill="none" stroke="url(#curve)" stroke-width="28" stroke-linecap="round"/>
+  <path d="M96 384h320" stroke="#e7ece8" stroke-width="12" opacity=".55"/>
+  <path d="M128 352h56m32-32h56m32-40h56m32-48h56" stroke="#e7ece8" stroke-width="14" stroke-linecap="round" opacity=".78"/>
+</svg>
