@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 720" role="img" aria-labelledby="title-land_fertility desc-land_fertility">
+  <title id="title-land_fertility">Land Fertility</title>
+  <desc id="desc-land_fertility">Fertility degrades under pollution pressure and regenerates through maintenance</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d7dfdc"/>
+    </marker>
+    <radialGradient id="bg" cx="30%" cy="20%" r="80%">
+      <stop offset="0" stop-color="#243842"/>
+      <stop offset="1" stop-color="#101418"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .title { font: 700 30px Arial, sans-serif; fill: #f7f7f4; }
+    .subtitle { font: 15px Arial, sans-serif; fill: #b8c5c0; }
+    .node text { font: 700 14px Arial, sans-serif; fill: #f7f7f4; }
+    .node .kind { font: 11px Arial, sans-serif; fill: #c6d0cc; opacity: .85; text-transform: uppercase; }
+    .edge { fill: none; stroke: #d7dfdc; stroke-width: 2.2; opacity: .72; }
+    .sign { font: 700 17px Arial, sans-serif; fill: #101418; }
+    .caption { font: 11px Arial, sans-serif; fill: #c7d1cd; }
+  </style>
+  <rect width="980" height="720" rx="18" fill="url(#bg)"/>
+  <path d="M70 620 C220 560 320 450 430 335 C560 200 710 145 900 180" fill="none" stroke="#b04a5a" stroke-width="4" opacity=".16"/>
+  <path d="M70 580 C270 600 450 540 610 455 C740 386 835 390 900 430" fill="none" stroke="#d9c27f" stroke-width="3" opacity=".16"/>
+  <text x="52" y="58" class="title">Land Fertility</text>
+  <text x="52" y="86" class="subtitle">Fertility degrades under pollution pressure and regenerates through maintenance</text>
+  
+    <path class="edge" d="M 170 150 C 170.0 181.5, 170.0 328.5, 170 360" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="170.0" cy="255.0" r="13" fill="#8fb8a5"/>
+      <text x="170.0" y="260.0" text-anchor="middle" class="sign">+</text>
+      <text x="170.0" y="284.0" text-anchor="middle" class="caption">degradation rate</text>
+    </g>
+    <path class="edge" d="M 170 360 C 261.0 339.0, 339.0 241.0, 430 220" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="300.0" cy="290.0" r="13" fill="#d28a93"/>
+      <text x="300.0" y="295.0" text-anchor="middle" class="sign">-</text>
+      <text x="300.0" y="319.0" text-anchor="middle" class="caption">loss</text>
+    </g>
+    <path class="edge" d="M 690 150 C 690.0 181.5, 690.0 328.5, 690 360" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="690.0" cy="255.0" r="13" fill="#8fb8a5"/>
+      <text x="690.0" y="260.0" text-anchor="middle" class="sign">+</text>
+      <text x="690.0" y="284.0" text-anchor="middle" class="caption">repair</text>
+    </g>
+    <path class="edge" d="M 690 360 C 599.0 339.0, 521.0 241.0, 430 220" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="560.0" cy="290.0" r="13" fill="#8fb8a5"/>
+      <text x="560.0" y="295.0" text-anchor="middle" class="sign">+</text>
+      <text x="560.0" y="319.0" text-anchor="middle" class="caption">rebuilds fertility</text>
+    </g>
+    <path class="edge" d="M 430 220 C 430.0 262.0, 430.0 458.0, 430 500" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="430.0" cy="360.0" r="13" fill="#8fb8a5"/>
+      <text x="430.0" y="365.0" text-anchor="middle" class="sign">+</text>
+      <text x="430.0" y="389.0" text-anchor="middle" class="caption">yield base</text>
+    </g>
+    <g class="node">
+      <rect x="348" y="190" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="430" y="216" text-anchor="middle">Land Fertility</text>
+      <text x="430" y="236" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="88" y="330" width="164" height="60" rx="10" fill="#4d2630" stroke="#d28a93" stroke-width="2"/>
+      <text x="170" y="356" text-anchor="middle">Fertility Degradation</text>
+      <text x="170" y="376" text-anchor="middle" class="kind">flow</text>
+    </g>
+    <g class="node">
+      <rect x="608" y="330" width="164" height="60" rx="10" fill="#4d2630" stroke="#d28a93" stroke-width="2"/>
+      <text x="690" y="356" text-anchor="middle">Fertility Regeneration</text>
+      <text x="690" y="376" text-anchor="middle" class="kind">flow</text>
+    </g>
+    <g class="node">
+      <rect x="88" y="120" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="170" y="146" text-anchor="middle">Persistent Pollution</text>
+      <text x="170" y="166" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="608" y="120" width="164" height="60" rx="10" fill="#24314a" stroke="#9eb0d6" stroke-width="2"/>
+      <text x="690" y="146" text-anchor="middle">Land Maintenance</text>
+      <text x="690" y="166" text-anchor="middle" class="kind">process</text>
+    </g>
+    <g class="node">
+      <rect x="348" y="470" width="164" height="60" rx="10" fill="#493f22" stroke="#d9c27f" stroke-width="2"/>
+      <text x="430" y="496" text-anchor="middle">Land Yield</text>
+      <text x="430" y="516" text-anchor="middle" class="kind">outcome</text>
+    </g>
+</svg>

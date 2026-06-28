@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 720" role="img" aria-labelledby="title-life_expectancy desc-life_expectancy">
+  <title id="title-life_expectancy">Life Expectancy</title>
+  <desc id="desc-life_expectancy">Life expectancy integrates food, services, pollution, and crowding effects</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d7dfdc"/>
+    </marker>
+    <radialGradient id="bg" cx="30%" cy="20%" r="80%">
+      <stop offset="0" stop-color="#243842"/>
+      <stop offset="1" stop-color="#101418"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .title { font: 700 30px Arial, sans-serif; fill: #f7f7f4; }
+    .subtitle { font: 15px Arial, sans-serif; fill: #b8c5c0; }
+    .node text { font: 700 14px Arial, sans-serif; fill: #f7f7f4; }
+    .node .kind { font: 11px Arial, sans-serif; fill: #c6d0cc; opacity: .85; text-transform: uppercase; }
+    .edge { fill: none; stroke: #d7dfdc; stroke-width: 2.2; opacity: .72; }
+    .sign { font: 700 17px Arial, sans-serif; fill: #101418; }
+    .caption { font: 11px Arial, sans-serif; fill: #c7d1cd; }
+  </style>
+  <rect width="980" height="720" rx="18" fill="url(#bg)"/>
+  <path d="M70 620 C220 560 320 450 430 335 C560 200 710 145 900 180" fill="none" stroke="#b04a5a" stroke-width="4" opacity=".16"/>
+  <path d="M70 580 C270 600 450 540 610 455 C740 386 835 390 900 430" fill="none" stroke="#d9c27f" stroke-width="3" opacity=".16"/>
+  <text x="52" y="58" class="title">Life Expectancy</text>
+  <text x="52" y="86" class="subtitle">Life expectancy integrates food, services, pollution, and crowding effects</text>
+  
+    <path class="edge" d="M 170 170 C 261.0 207.5, 339.0 382.5, 430 420" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="300.0" cy="295.0" r="13" fill="#8fb8a5"/>
+      <text x="300.0" y="300.0" text-anchor="middle" class="sign">+</text>
+      <text x="300.0" y="324.0" text-anchor="middle" class="caption">nutrition</text>
+    </g>
+    <path class="edge" d="M 430 170 C 430.0 207.5, 430.0 382.5, 430 420" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="430.0" cy="295.0" r="13" fill="#8fb8a5"/>
+      <text x="430.0" y="300.0" text-anchor="middle" class="sign">+</text>
+      <text x="430.0" y="324.0" text-anchor="middle" class="caption">care</text>
+    </g>
+    <path class="edge" d="M 690 170 C 599.0 207.5, 521.0 382.5, 430 420" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="560.0" cy="295.0" r="13" fill="#d28a93"/>
+      <text x="560.0" y="300.0" text-anchor="middle" class="sign">-</text>
+      <text x="560.0" y="324.0" text-anchor="middle" class="caption">toxicity</text>
+    </g>
+    <path class="edge" d="M 170 420 C 261.0 420.0, 339.0 420.0, 430 420" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="300.0" cy="420.0" r="13" fill="#d28a93"/>
+      <text x="300.0" y="425.0" text-anchor="middle" class="sign">-</text>
+      <text x="300.0" y="449.0" text-anchor="middle" class="caption">urban pressure</text>
+    </g>
+    <path class="edge" d="M 430 420 C 521.0 420.0, 599.0 420.0, 690 420" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="560.0" cy="420.0" r="13" fill="#d28a93"/>
+      <text x="560.0" y="425.0" text-anchor="middle" class="sign">-</text>
+      <text x="560.0" y="449.0" text-anchor="middle" class="caption">mortality</text>
+    </g>
+    <path class="edge" d="M 690 420 C 599.0 449.2, 521.0 585.8, 430 615" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="560.0" cy="517.5" r="13" fill="#d28a93"/>
+      <text x="560.0" y="522.5" text-anchor="middle" class="sign">-</text>
+      <text x="560.0" y="546.5" text-anchor="middle" class="caption">deaths</text>
+    </g>
+    <path class="edge" d="M 430 615 C 339.0 585.8, 261.0 449.2, 170 420" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="300.0" cy="517.5" r="13" fill="#8fb8a5"/>
+      <text x="300.0" y="522.5" text-anchor="middle" class="sign">+</text>
+      <text x="300.0" y="546.5" text-anchor="middle" class="caption">urban fraction</text>
+    </g>
+    <g class="node">
+      <rect x="88" y="140" width="164" height="60" rx="10" fill="#493f22" stroke="#d9c27f" stroke-width="2"/>
+      <text x="170" y="166" text-anchor="middle">Food Per Capita</text>
+      <text x="170" y="186" text-anchor="middle" class="kind">outcome</text>
+    </g>
+    <g class="node">
+      <rect x="348" y="140" width="164" height="60" rx="10" fill="#493f22" stroke="#d9c27f" stroke-width="2"/>
+      <text x="430" y="166" text-anchor="middle">Health Services</text>
+      <text x="430" y="186" text-anchor="middle" class="kind">outcome</text>
+    </g>
+    <g class="node">
+      <rect x="608" y="140" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="690" y="166" text-anchor="middle">Persistent Pollution</text>
+      <text x="690" y="186" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="88" y="390" width="164" height="60" rx="10" fill="#24314a" stroke="#9eb0d6" stroke-width="2"/>
+      <text x="170" y="416" text-anchor="middle">Crowding</text>
+      <text x="170" y="436" text-anchor="middle" class="kind">process</text>
+    </g>
+    <g class="node">
+      <rect x="348" y="390" width="164" height="60" rx="10" fill="#493f22" stroke="#d9c27f" stroke-width="2"/>
+      <text x="430" y="416" text-anchor="middle">Life Expectancy</text>
+      <text x="430" y="436" text-anchor="middle" class="kind">outcome</text>
+    </g>
+    <g class="node">
+      <rect x="608" y="390" width="164" height="60" rx="10" fill="#4d2630" stroke="#d28a93" stroke-width="2"/>
+      <text x="690" y="416" text-anchor="middle">Mortality Rates</text>
+      <text x="690" y="436" text-anchor="middle" class="kind">flow</text>
+    </g>
+    <g class="node">
+      <rect x="348" y="585" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="430" y="611" text-anchor="middle">Population</text>
+      <text x="430" y="631" text-anchor="middle" class="kind">stock</text>
+    </g>
+</svg>

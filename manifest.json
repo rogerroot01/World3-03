@@ -1227,7 +1227,7 @@
   },
   "files": {
     "app.R": {
-      "checksum": "098c60f4c50ed56d4b44646a3fad05bd"
+      "checksum": "010c403a11e2a5d7136c267d69dc4de8"
     },
     "data/functions_table_world3.json": {
       "checksum": "131f24715c0a50fbbdbef6a7c4efd756"
@@ -1242,16 +1242,19 @@
       "checksum": "bb20d0b825216a6b167b9508ed7a4f2e"
     },
     "docs/World3-03_Shiny_App_User_Manual.docx": {
-      "checksum": "b191e0c024c7a69e42c8391e591d16af"
+      "checksum": "7a927ef00994eb03753626adc1fc2a15"
     },
     "R/world3_03.R": {
       "checksum": "c2ea9e53db147a06394cdcbed3c0bc55"
     },
     "README.md": {
-      "checksum": "827ba96c28e6552be058a653130b5edf"
+      "checksum": "d7f295b5161071ed8e4458057b3f615f"
+    },
+    "tools/build_system_diagrams.py": {
+      "checksum": "ac03ba62ce17f38e6a45b66610a28095"
     },
     "tools/build_user_manual.py": {
-      "checksum": "f984a78e6e38082e817b38a8389cbfc5"
+      "checksum": "827bbb80195b73b1b176163d18e831ca"
     },
     "tools/README.md": {
       "checksum": "e3b57a02c1dd464bbc714e270964bbc7"
@@ -1263,7 +1266,40 @@
       "checksum": "9a3c23035c40f14184ce563a0d822469"
     },
     "www/app.css": {
-      "checksum": "5869ede77de1edf6463cc8a012f9a5fa"
+      "checksum": "d89b678acefff838b6daba5c534de6e0"
+    },
+    "www/diagrams/arable_land.svg": {
+      "checksum": "182395ac5ecd69fd328bc17339f83b5f"
+    },
+    "www/diagrams/food_production.svg": {
+      "checksum": "00921dc05a3302a353346d863fb6b5dc"
+    },
+    "www/diagrams/human_fertility.svg": {
+      "checksum": "583a42880c5f89872f768697a5f86b05"
+    },
+    "www/diagrams/labor_force.svg": {
+      "checksum": "57165cb557a08d597b02fd15d4fa0522"
+    },
+    "www/diagrams/land_fertility.svg": {
+      "checksum": "d15ddff223988ca9d6f743c99ef27d3e"
+    },
+    "www/diagrams/life_expectancy.svg": {
+      "checksum": "fb3ce75ca7d1315c3bf982655df3086f"
+    },
+    "www/diagrams/nonrenewable_resources.svg": {
+      "checksum": "fe6d9c52e4448c58e428c6e8e6edebbe"
+    },
+    "www/diagrams/overview.svg": {
+      "checksum": "095513a8f9a16e411a95ee428669135d"
+    },
+    "www/diagrams/pollution_dynamics.svg": {
+      "checksum": "7db4590a6998d8fb61f03be627f6c45d"
+    },
+    "www/diagrams/population_dynamics.svg": {
+      "checksum": "190aeb01682a6defb7388cbae5f68c48"
+    },
+    "www/diagrams/service_investment.svg": {
+      "checksum": "3f67548bc780bbe40702735011a09dab"
     },
     "www/logo.svg": {
       "checksum": "0792b9394956bc24a3ca4c6899faa23b"

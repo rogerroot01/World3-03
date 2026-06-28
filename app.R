@@ -57,6 +57,17 @@ plot_lines <- function(df, vars, title, ylab = NULL, scale = 1) {
 
 `%||%` <- function(x, y) if (is.null(x)) y else x
 
+diagram_panel <- function(title, file, note) {
+  tabPanel(
+    title,
+    div(
+      class = "diagram-page",
+      tags$img(src = file, class = "system-diagram", alt = title),
+      p(class = "diagram-note", note)
+    )
+  )
+}
+
 ui <- fluidPage(
   tags$head(
     tags$link(rel = "stylesheet", type = "text/css", href = "app.css"),
@@ -147,7 +158,24 @@ ui <- fluidPage(
         tabPanel("Agriculture", plotOutput("agriculture_plot", height = 460)),
         tabPanel("Pollution", plotOutput("pollution_plot", height = 460)),
         tabPanel("Resources", plotOutput("resource_plot", height = 460)),
-        tabPanel("Data", tableOutput("tail_table"))
+        tabPanel("Data", tableOutput("tail_table")),
+        tabPanel(
+          "System Diagrams",
+          tabsetPanel(
+            type = "pills",
+            diagram_panel("Overview", "diagrams/overview.svg", "A high-level map of the major feedback structure across World3-03 sectors."),
+            diagram_panel("Human Fertility", "diagrams/human_fertility.svg", "Fertility responds to desired family size, fertility control, and the reproductive-age population."),
+            diagram_panel("Land Fertility", "diagrams/land_fertility.svg", "Land fertility rises through regeneration and falls through pollution-driven degradation."),
+            diagram_panel("Food Production", "diagrams/food_production.svg", "Food production depends on arable land, yield, agricultural inputs, and population pressure."),
+            diagram_panel("Labor Force", "diagrams/labor_force.svg", "Labor utilization connects population structure, jobs, capital utilization, and output."),
+            diagram_panel("Population Dynamics", "diagrams/population_dynamics.svg", "Population moves through age cohorts via births, maturation, mortality, and life expectancy."),
+            diagram_panel("Pollution Dynamics", "diagrams/pollution_dynamics.svg", "Persistent pollution accumulates from industrial and agricultural activity and feeds back into health and yield."),
+            diagram_panel("Service Investment", "diagrams/service_investment.svg", "Industrial output allocated to services builds service capital and service output."),
+            diagram_panel("Natural Resources", "diagrams/nonrenewable_resources.svg", "Resource utilization depletes nonrenewable resources and increases the burden of extraction."),
+            diagram_panel("Arable Land", "diagrams/arable_land.svg", "Arable land changes through development, erosion, and conversion to urban-industrial land."),
+            diagram_panel("Life Expectancy", "diagrams/life_expectancy.svg", "Life expectancy integrates food, services, pollution, and crowding effects.")
+          )
+        )
       )
     )
   )

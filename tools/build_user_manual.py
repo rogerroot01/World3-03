@@ -184,9 +184,31 @@ def build():
             ["Pollution tab", "Persistent pollution index, pollution-generation factor, pollution technology, and ecological footprint."],
             ["Resources tab", "Nonrenewable resource fraction remaining, capital allocated to resource extraction, resource usage factor, and resource technology."],
             ["Data tab", "The last visible rows of the headline data table for inspection or copying."],
+            ["System Diagrams tab", "Original subsystem diagrams for the overall model and ten major submodels: human fertility, land fertility, food production, labor force utilization, population dynamics, pollution dynamics, service investment, nonrenewable resources, arable land, and life expectancy."],
         ],
         widths=[Inches(1.6), Inches(4.85)],
     )
+
+    doc.add_heading("System Diagrams", level=1)
+    doc.add_paragraph(
+        "The System Diagrams tab provides one illustration per submodel plus an overview. "
+        "These diagrams are original companion diagrams created for this app. They are inspired "
+        "by the public Insight Maker World3 reference you supplied, but they are not copied screenshots "
+        "or exported Insight Maker artwork."
+    )
+    add_bullets(doc, [
+        "Overview: links the major World3-03 sectors and feedback loops.",
+        "Human Fertility: explains desired family size, fertility control, total fertility, and births.",
+        "Land Fertility: explains fertility degradation and regeneration.",
+        "Food Production: explains arable land, agricultural inputs, land yield, and food per capita.",
+        "Labor Force: explains jobs, labor force, utilization, and capital output.",
+        "Population Dynamics: explains births, age cohorts, maturation, mortality, and life expectancy.",
+        "Pollution Dynamics: explains persistent pollution generation, assimilation, and effects.",
+        "Service Investment: explains allocation of industrial output to service capital.",
+        "Natural Resources: explains nonrenewable resource depletion and extraction burden.",
+        "Arable Land: explains development, erosion, and urban-industrial conversion.",
+        "Life Expectancy: explains food, services, pollution, crowding, and mortality.",
+    ])
 
     doc.add_heading("How to Present a Scenario", level=1)
     add_bullets(doc, [

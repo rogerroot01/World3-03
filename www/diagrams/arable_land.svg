@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 720" role="img" aria-labelledby="title-arable_land desc-arable_land">
+  <title id="title-arable_land">Arable Land Dynamics</title>
+  <desc id="desc-arable_land">Arable land expands through development and contracts through erosion and urban use</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d7dfdc"/>
+    </marker>
+    <radialGradient id="bg" cx="30%" cy="20%" r="80%">
+      <stop offset="0" stop-color="#243842"/>
+      <stop offset="1" stop-color="#101418"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .title { font: 700 30px Arial, sans-serif; fill: #f7f7f4; }
+    .subtitle { font: 15px Arial, sans-serif; fill: #b8c5c0; }
+    .node text { font: 700 14px Arial, sans-serif; fill: #f7f7f4; }
+    .node .kind { font: 11px Arial, sans-serif; fill: #c6d0cc; opacity: .85; text-transform: uppercase; }
+    .edge { fill: none; stroke: #d7dfdc; stroke-width: 2.2; opacity: .72; }
+    .sign { font: 700 17px Arial, sans-serif; fill: #101418; }
+    .caption { font: 11px Arial, sans-serif; fill: #c7d1cd; }
+  </style>
+  <rect width="980" height="720" rx="18" fill="url(#bg)"/>
+  <path d="M70 620 C220 560 320 450 430 335 C560 200 710 145 900 180" fill="none" stroke="#b04a5a" stroke-width="4" opacity=".16"/>
+  <path d="M70 580 C270 600 450 540 610 455 C740 386 835 390 900 430" fill="none" stroke="#d9c27f" stroke-width="3" opacity=".16"/>
+  <text x="52" y="58" class="title">Arable Land Dynamics</text>
+  <text x="52" y="86" class="subtitle">Arable land expands through development and contracts through erosion and urban use</text>
+  
+    <path class="edge" d="M 160 250 C 254.5 250.0, 335.5 250.0, 430 250" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="295.0" cy="250.0" r="13" fill="#8fb8a5"/>
+      <text x="295.0" y="255.0" text-anchor="middle" class="sign">+</text>
+      <text x="295.0" y="279.0" text-anchor="middle" class="caption">land available</text>
+    </g>
+    <path class="edge" d="M 430 250 C 521.0 250.0, 599.0 250.0, 690 250" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="560.0" cy="250.0" r="13" fill="#8fb8a5"/>
+      <text x="560.0" y="255.0" text-anchor="middle" class="sign">+</text>
+      <text x="560.0" y="279.0" text-anchor="middle" class="caption">adds land</text>
+    </g>
+    <path class="edge" d="M 430 250 C 335.5 250.0, 254.5 250.0, 160 250" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="295.0" cy="250.0" r="13" fill="#d28a93"/>
+      <text x="295.0" y="255.0" text-anchor="middle" class="sign">-</text>
+      <text x="295.0" y="279.0" text-anchor="middle" class="caption">drawdown</text>
+    </g>
+    <path class="edge" d="M 690 250 C 690.0 283.8, 690.0 441.2, 690 475" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="690.0" cy="362.5" r="13" fill="#8fb8a5"/>
+      <text x="690.0" y="367.5" text-anchor="middle" class="sign">+</text>
+      <text x="690.0" y="391.5" text-anchor="middle" class="caption">erosion base</text>
+    </g>
+    <path class="edge" d="M 690 475 C 690.0 441.2, 690.0 283.8, 690 250" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="690.0" cy="362.5" r="13" fill="#d28a93"/>
+      <text x="690.0" y="367.5" text-anchor="middle" class="sign">-</text>
+      <text x="690.0" y="391.5" text-anchor="middle" class="caption">loss</text>
+    </g>
+    <path class="edge" d="M 160 475 C 254.5 475.0, 335.5 475.0, 430 475" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="295.0" cy="475.0" r="13" fill="#8fb8a5"/>
+      <text x="295.0" y="480.0" text-anchor="middle" class="sign">+</text>
+      <text x="295.0" y="504.0" text-anchor="middle" class="caption">land required</text>
+    </g>
+    <path class="edge" d="M 430 475 C 521.0 441.2, 599.0 283.8, 690 250" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="560.0" cy="362.5" r="13" fill="#d28a93"/>
+      <text x="560.0" y="367.5" text-anchor="middle" class="sign">-</text>
+      <text x="560.0" y="391.5" text-anchor="middle" class="caption">conversion</text>
+    </g>
+    <g class="node">
+      <rect x="78" y="220" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="160" y="246" text-anchor="middle">Potentially Arable Land</text>
+      <text x="160" y="266" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="348" y="220" width="164" height="60" rx="10" fill="#4d2630" stroke="#d28a93" stroke-width="2"/>
+      <text x="430" y="246" text-anchor="middle">Land Development</text>
+      <text x="430" y="266" text-anchor="middle" class="kind">flow</text>
+    </g>
+    <g class="node">
+      <rect x="608" y="220" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="690" y="246" text-anchor="middle">Arable Land</text>
+      <text x="690" y="266" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="608" y="445" width="164" height="60" rx="10" fill="#4d2630" stroke="#d28a93" stroke-width="2"/>
+      <text x="690" y="471" text-anchor="middle">Land Erosion</text>
+      <text x="690" y="491" text-anchor="middle" class="kind">flow</text>
+    </g>
+    <g class="node">
+      <rect x="348" y="445" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="430" y="471" text-anchor="middle">Urban-Industrial Land</text>
+      <text x="430" y="491" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="78" y="445" width="164" height="60" rx="10" fill="#24314a" stroke="#9eb0d6" stroke-width="2"/>
+      <text x="160" y="471" text-anchor="middle">Population &amp; Industry</text>
+      <text x="160" y="491" text-anchor="middle" class="kind">process</text>
+    </g>
+</svg>

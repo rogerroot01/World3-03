@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 720" role="img" aria-labelledby="title-population_dynamics desc-population_dynamics">
+  <title id="title-population_dynamics">Population Dynamics</title>
+  <desc id="desc-population_dynamics">Age cohorts mature, births add young people, and deaths remove people</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d7dfdc"/>
+    </marker>
+    <radialGradient id="bg" cx="30%" cy="20%" r="80%">
+      <stop offset="0" stop-color="#243842"/>
+      <stop offset="1" stop-color="#101418"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .title { font: 700 30px Arial, sans-serif; fill: #f7f7f4; }
+    .subtitle { font: 15px Arial, sans-serif; fill: #b8c5c0; }
+    .node text { font: 700 14px Arial, sans-serif; fill: #f7f7f4; }
+    .node .kind { font: 11px Arial, sans-serif; fill: #c6d0cc; opacity: .85; text-transform: uppercase; }
+    .edge { fill: none; stroke: #d7dfdc; stroke-width: 2.2; opacity: .72; }
+    .sign { font: 700 17px Arial, sans-serif; fill: #101418; }
+    .caption { font: 11px Arial, sans-serif; fill: #c7d1cd; }
+  </style>
+  <rect width="980" height="720" rx="18" fill="url(#bg)"/>
+  <path d="M70 620 C220 560 320 450 430 335 C560 200 710 145 900 180" fill="none" stroke="#b04a5a" stroke-width="4" opacity=".16"/>
+  <path d="M70 580 C270 600 450 540 610 455 C740 386 835 390 900 430" fill="none" stroke="#d9c27f" stroke-width="3" opacity=".16"/>
+  <text x="52" y="58" class="title">Population Dynamics</text>
+  <text x="52" y="86" class="subtitle">Age cohorts mature, births add young people, and deaths remove people</text>
+  
+    <path class="edge" d="M 160 500 C 160.0 461.0, 160.0 279.0, 160 240" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="160.0" cy="370.0" r="13" fill="#8fb8a5"/>
+      <text x="160.0" y="375.0" text-anchor="middle" class="sign">+</text>
+      <text x="160.0" y="399.0" text-anchor="middle" class="caption">birth inflow</text>
+    </g>
+    <path class="edge" d="M 160 240 C 240.5 240.0, 309.5 240.0, 390 240" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="275.0" cy="240.0" r="13" fill="#8fb8a5"/>
+      <text x="275.0" y="245.0" text-anchor="middle" class="sign">+</text>
+      <text x="275.0" y="269.0" text-anchor="middle" class="caption">maturation</text>
+    </g>
+    <path class="edge" d="M 390 240 C 470.5 240.0, 539.5 240.0, 620 240" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="505.0" cy="240.0" r="13" fill="#8fb8a5"/>
+      <text x="505.0" y="245.0" text-anchor="middle" class="sign">+</text>
+      <text x="505.0" y="269.0" text-anchor="middle" class="caption">maturation</text>
+    </g>
+    <path class="edge" d="M 620 240 C 690.0 240.0, 750.0 240.0, 820 240" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="720.0" cy="240.0" r="13" fill="#8fb8a5"/>
+      <text x="720.0" y="245.0" text-anchor="middle" class="sign">+</text>
+      <text x="720.0" y="269.0" text-anchor="middle" class="caption">maturation</text>
+    </g>
+    <path class="edge" d="M 390 500 C 470.5 500.0, 539.5 500.0, 620 500" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="505.0" cy="500.0" r="13" fill="#d28a93"/>
+      <text x="505.0" y="505.0" text-anchor="middle" class="sign">-</text>
+      <text x="505.0" y="529.0" text-anchor="middle" class="caption">mortality</text>
+    </g>
+    <path class="edge" d="M 620 500 C 459.0 461.0, 321.0 279.0, 160 240" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="390.0" cy="370.0" r="13" fill="#d28a93"/>
+      <text x="390.0" y="375.0" text-anchor="middle" class="sign">-</text>
+      <text x="390.0" y="399.0" text-anchor="middle" class="caption">mortality</text>
+    </g>
+    <path class="edge" d="M 620 500 C 539.5 461.0, 470.5 279.0, 390 240" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="505.0" cy="370.0" r="13" fill="#d28a93"/>
+      <text x="505.0" y="375.0" text-anchor="middle" class="sign">-</text>
+      <text x="505.0" y="399.0" text-anchor="middle" class="caption">mortality</text>
+    </g>
+    <path class="edge" d="M 620 500 C 620.0 461.0, 620.0 279.0, 620 240" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="620.0" cy="370.0" r="13" fill="#d28a93"/>
+      <text x="620.0" y="375.0" text-anchor="middle" class="sign">-</text>
+      <text x="620.0" y="399.0" text-anchor="middle" class="caption">mortality</text>
+    </g>
+    <path class="edge" d="M 620 500 C 690.0 461.0, 750.0 279.0, 820 240" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="720.0" cy="370.0" r="13" fill="#d28a93"/>
+      <text x="720.0" y="375.0" text-anchor="middle" class="sign">-</text>
+      <text x="720.0" y="399.0" text-anchor="middle" class="caption">mortality</text>
+    </g>
+    <g class="node">
+      <rect x="78" y="210" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="160" y="236" text-anchor="middle">Ages 0-14</text>
+      <text x="160" y="256" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="308" y="210" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="390" y="236" text-anchor="middle">Ages 15-44</text>
+      <text x="390" y="256" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="538" y="210" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="620" y="236" text-anchor="middle">Ages 45-64</text>
+      <text x="620" y="256" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="738" y="210" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="820" y="236" text-anchor="middle">Ages 65+</text>
+      <text x="820" y="256" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="78" y="470" width="164" height="60" rx="10" fill="#4d2630" stroke="#d28a93" stroke-width="2"/>
+      <text x="160" y="496" text-anchor="middle">Births</text>
+      <text x="160" y="516" text-anchor="middle" class="kind">flow</text>
+    </g>
+    <g class="node">
+      <rect x="538" y="470" width="164" height="60" rx="10" fill="#4d2630" stroke="#d28a93" stroke-width="2"/>
+      <text x="620" y="496" text-anchor="middle">Deaths</text>
+      <text x="620" y="516" text-anchor="middle" class="kind">flow</text>
+    </g>
+    <g class="node">
+      <rect x="308" y="470" width="164" height="60" rx="10" fill="#493f22" stroke="#d9c27f" stroke-width="2"/>
+      <text x="390" y="496" text-anchor="middle">Life Expectancy</text>
+      <text x="390" y="516" text-anchor="middle" class="kind">outcome</text>
+    </g>
+</svg>

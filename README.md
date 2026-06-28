@@ -13,6 +13,7 @@ This folder is the publishable Shiny application root.
 - `www/logo.svg`: app icon.
 - `www/app-icon.svg`: larger custom icon used as favicon and splash icon.
 - `www/splash.svg`: dark splash-screen background.
+- `www/diagrams/*.svg`: original system-thinking subsystem diagrams.
 - `docs/World3-03_Shiny_App_User_Manual.docx`: user-facing manual.
 - `tools/write_manifest.R`: helper for generating `manifest.json`.
 

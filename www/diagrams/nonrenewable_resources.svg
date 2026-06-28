@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 720" role="img" aria-labelledby="title-nonrenewable_resources desc-nonrenewable_resources">
+  <title id="title-nonrenewable_resources">Utilization of Nonrenewable Natural Resources</title>
+  <desc id="desc-nonrenewable_resources">Resource use depletes the stock and raises extraction burden as resources fall</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d7dfdc"/>
+    </marker>
+    <radialGradient id="bg" cx="30%" cy="20%" r="80%">
+      <stop offset="0" stop-color="#243842"/>
+      <stop offset="1" stop-color="#101418"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .title { font: 700 30px Arial, sans-serif; fill: #f7f7f4; }
+    .subtitle { font: 15px Arial, sans-serif; fill: #b8c5c0; }
+    .node text { font: 700 14px Arial, sans-serif; fill: #f7f7f4; }
+    .node .kind { font: 11px Arial, sans-serif; fill: #c6d0cc; opacity: .85; text-transform: uppercase; }
+    .edge { fill: none; stroke: #d7dfdc; stroke-width: 2.2; opacity: .72; }
+    .sign { font: 700 17px Arial, sans-serif; fill: #101418; }
+    .caption { font: 11px Arial, sans-serif; fill: #c7d1cd; }
+  </style>
+  <rect width="980" height="720" rx="18" fill="url(#bg)"/>
+  <path d="M70 620 C220 560 320 450 430 335 C560 200 710 145 900 180" fill="none" stroke="#b04a5a" stroke-width="4" opacity=".16"/>
+  <path d="M70 580 C270 600 450 540 610 455 C740 386 835 390 900 430" fill="none" stroke="#d9c27f" stroke-width="3" opacity=".16"/>
+  <text x="52" y="58" class="title">Utilization of Nonrenewable Natural Resources</text>
+  <text x="52" y="86" class="subtitle">Resource use depletes the stock and raises extraction burden as resources fall</text>
+  
+    <path class="edge" d="M 250 470 C 358.5 436.2, 451.5 278.8, 560 245" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="405.0" cy="357.5" r="13" fill="#8fb8a5"/>
+      <text x="405.0" y="362.5" text-anchor="middle" class="sign">+</text>
+      <text x="405.0" y="386.5" text-anchor="middle" class="caption">people</text>
+    </g>
+    <path class="edge" d="M 560 470 C 560.0 436.2, 560.0 278.8, 560 245" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="560.0" cy="357.5" r="13" fill="#8fb8a5"/>
+      <text x="560.0" y="362.5" text-anchor="middle" class="sign">+</text>
+      <text x="560.0" y="386.5" text-anchor="middle" class="caption">resource multiplier</text>
+    </g>
+    <path class="edge" d="M 560 245 C 451.5 245.0, 358.5 245.0, 250 245" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="405.0" cy="245.0" r="13" fill="#d28a93"/>
+      <text x="405.0" y="250.0" text-anchor="middle" class="sign">-</text>
+      <text x="405.0" y="274.0" text-anchor="middle" class="caption">depletion</text>
+    </g>
+    <path class="edge" d="M 250 245 C 442.5 245.0, 607.5 245.0, 800 245" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="525.0" cy="245.0" r="13" fill="#d28a93"/>
+      <text x="525.0" y="250.0" text-anchor="middle" class="sign">-</text>
+      <text x="525.0" y="274.0" text-anchor="middle" class="caption">scarcity burden</text>
+    </g>
+    <path class="edge" d="M 800 245 C 800.0 278.8, 800.0 436.2, 800 470" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="800.0" cy="357.5" r="13" fill="#d28a93"/>
+      <text x="800.0" y="362.5" text-anchor="middle" class="sign">-</text>
+      <text x="800.0" y="386.5" text-anchor="middle" class="caption">less productive capital</text>
+    </g>
+    <g class="node">
+      <rect x="168" y="215" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="250" y="241" text-anchor="middle">Nonrenewable Resources</text>
+      <text x="250" y="261" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="478" y="215" width="164" height="60" rx="10" fill="#4d2630" stroke="#d28a93" stroke-width="2"/>
+      <text x="560" y="241" text-anchor="middle">Resource Use Rate</text>
+      <text x="560" y="261" text-anchor="middle" class="kind">flow</text>
+    </g>
+    <g class="node">
+      <rect x="168" y="440" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="250" y="466" text-anchor="middle">Population</text>
+      <text x="250" y="486" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="478" y="440" width="164" height="60" rx="10" fill="#24314a" stroke="#9eb0d6" stroke-width="2"/>
+      <text x="560" y="466" text-anchor="middle">Industrial Output Per Capita</text>
+      <text x="560" y="486" text-anchor="middle" class="kind">process</text>
+    </g>
+    <g class="node">
+      <rect x="718" y="215" width="164" height="60" rx="10" fill="#24314a" stroke="#9eb0d6" stroke-width="2"/>
+      <text x="800" y="241" text-anchor="middle">Capital to Extraction</text>
+      <text x="800" y="261" text-anchor="middle" class="kind">process</text>
+    </g>
+    <g class="node">
+      <rect x="718" y="440" width="164" height="60" rx="10" fill="#4d2630" stroke="#d28a93" stroke-width="2"/>
+      <text x="800" y="466" text-anchor="middle">Industrial Output</text>
+      <text x="800" y="486" text-anchor="middle" class="kind">flow</text>
+    </g>
+</svg>

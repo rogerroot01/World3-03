@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 720" role="img" aria-labelledby="title-overview desc-overview">
+  <title id="title-overview">World3-03 Subsystem Overview</title>
+  <desc id="desc-overview">Major feedback structure linking population, capital, agriculture, pollution, and resources</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d7dfdc"/>
+    </marker>
+    <radialGradient id="bg" cx="30%" cy="20%" r="80%">
+      <stop offset="0" stop-color="#243842"/>
+      <stop offset="1" stop-color="#101418"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .title { font: 700 30px Arial, sans-serif; fill: #f7f7f4; }
+    .subtitle { font: 15px Arial, sans-serif; fill: #b8c5c0; }
+    .node text { font: 700 14px Arial, sans-serif; fill: #f7f7f4; }
+    .node .kind { font: 11px Arial, sans-serif; fill: #c6d0cc; opacity: .85; text-transform: uppercase; }
+    .edge { fill: none; stroke: #d7dfdc; stroke-width: 2.2; opacity: .72; }
+    .sign { font: 700 17px Arial, sans-serif; fill: #101418; }
+    .caption { font: 11px Arial, sans-serif; fill: #c7d1cd; }
+  </style>
+  <rect width="980" height="720" rx="18" fill="url(#bg)"/>
+  <path d="M70 620 C220 560 320 450 430 335 C560 200 710 145 900 180" fill="none" stroke="#b04a5a" stroke-width="4" opacity=".16"/>
+  <path d="M70 580 C270 600 450 540 610 455 C740 386 835 390 900 430" fill="none" stroke="#d9c27f" stroke-width="3" opacity=".16"/>
+  <text x="52" y="58" class="title">World3-03 Subsystem Overview</text>
+  <text x="52" y="86" class="subtitle">Major feedback structure linking population, capital, agriculture, pollution, and resources</text>
+  
+    <path class="edge" d="M 170 170 C 261.0 167.0, 339.0 153.0, 430 150" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="300.0" cy="160.0" r="13" fill="#8fb8a5"/>
+      <text x="300.0" y="165.0" text-anchor="middle" class="sign">+</text>
+      <text x="300.0" y="189.0" text-anchor="middle" class="caption">labor demand</text>
+    </g>
+    <path class="edge" d="M 430 150 C 430.0 184.5, 430.0 345.5, 430 380" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="430.0" cy="265.0" r="13" fill="#8fb8a5"/>
+      <text x="430.0" y="270.0" text-anchor="middle" class="sign">+</text>
+      <text x="430.0" y="294.0" text-anchor="middle" class="caption">agricultural inputs</text>
+    </g>
+    <path class="edge" d="M 430 380 C 339.0 348.5, 261.0 201.5, 170 170" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="300.0" cy="275.0" r="13" fill="#8fb8a5"/>
+      <text x="300.0" y="280.0" text-anchor="middle" class="sign">+</text>
+      <text x="300.0" y="304.0" text-anchor="middle" class="caption">food per capita</text>
+    </g>
+    <path class="edge" d="M 430 150 C 339.0 190.5, 261.0 379.5, 170 420" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="300.0" cy="285.0" r="13" fill="#d28a93"/>
+      <text x="300.0" y="290.0" text-anchor="middle" class="sign">-</text>
+      <text x="300.0" y="314.0" text-anchor="middle" class="caption">resource use</text>
+    </g>
+    <path class="edge" d="M 170 420 C 261.0 379.5, 339.0 190.5, 430 150" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="300.0" cy="285.0" r="13" fill="#d28a93"/>
+      <text x="300.0" y="290.0" text-anchor="middle" class="sign">-</text>
+      <text x="300.0" y="314.0" text-anchor="middle" class="caption">extraction burden</text>
+    </g>
+    <path class="edge" d="M 430 150 C 521.0 190.5, 599.0 379.5, 690 420" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="560.0" cy="285.0" r="13" fill="#8fb8a5"/>
+      <text x="560.0" y="290.0" text-anchor="middle" class="sign">+</text>
+      <text x="560.0" y="314.0" text-anchor="middle" class="caption">material throughput</text>
+    </g>
+    <path class="edge" d="M 690 420 C 599.0 414.0, 521.0 386.0, 430 380" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="560.0" cy="400.0" r="13" fill="#d28a93"/>
+      <text x="560.0" y="405.0" text-anchor="middle" class="sign">-</text>
+      <text x="560.0" y="429.0" text-anchor="middle" class="caption">yield stress</text>
+    </g>
+    <path class="edge" d="M 690 180 C 599.0 244.5, 521.0 545.5, 430 610" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="560.0" cy="395.0" r="13" fill="#8fb8a5"/>
+      <text x="560.0" y="400.0" text-anchor="middle" class="sign">+</text>
+      <text x="560.0" y="424.0" text-anchor="middle" class="caption">services</text>
+    </g>
+    <path class="edge" d="M 430 380 C 430.0 414.5, 430.0 575.5, 430 610" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="430.0" cy="495.0" r="13" fill="#8fb8a5"/>
+      <text x="430.0" y="500.0" text-anchor="middle" class="sign">+</text>
+      <text x="430.0" y="524.0" text-anchor="middle" class="caption">nutrition</text>
+    </g>
+    <path class="edge" d="M 690 420 C 599.0 448.5, 521.0 581.5, 430 610" marker-end="url(#arrow)"/>
+    <g class="edge-label">
+      <circle cx="560.0" cy="515.0" r="13" fill="#d28a93"/>
+      <text x="560.0" y="520.0" text-anchor="middle" class="sign">-</text>
+      <text x="560.0" y="544.0" text-anchor="middle" class="caption">health impact</text>
+    </g>
+    <g class="node">
+      <rect x="88" y="140" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="170" y="166" text-anchor="middle">Population</text>
+      <text x="170" y="186" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="348" y="120" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="430" y="146" text-anchor="middle">Industrial Capital</text>
+      <text x="430" y="166" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="608" y="150" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="690" y="176" text-anchor="middle">Service Capital</text>
+      <text x="690" y="196" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="348" y="350" width="164" height="60" rx="10" fill="#24314a" stroke="#9eb0d6" stroke-width="2"/>
+      <text x="430" y="376" text-anchor="middle">Food Production</text>
+      <text x="430" y="396" text-anchor="middle" class="kind">process</text>
+    </g>
+    <g class="node">
+      <rect x="88" y="390" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="170" y="416" text-anchor="middle">Nonrenewable Resources</text>
+      <text x="170" y="436" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="608" y="390" width="164" height="60" rx="10" fill="#213d46" stroke="#8fb8a5" stroke-width="2"/>
+      <text x="690" y="416" text-anchor="middle">Persistent Pollution</text>
+      <text x="690" y="436" text-anchor="middle" class="kind">stock</text>
+    </g>
+    <g class="node">
+      <rect x="348" y="580" width="164" height="60" rx="10" fill="#493f22" stroke="#d9c27f" stroke-width="2"/>
+      <text x="430" y="606" text-anchor="middle">Human Welfare</text>
+      <text x="430" y="626" text-anchor="middle" class="kind">outcome</text>
+    </g>
+</svg>

@@ -153,6 +153,29 @@ body {
   margin: 0 4px 8px 0;
 }
 
+.diagram-page {
+  padding: 14px 0 4px;
+}
+
+.system-diagram {
+  background: #101418;
+  border: 1px solid #30363b;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(16, 20, 24, .12);
+  display: block;
+  height: auto;
+  max-height: 70vh;
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.diagram-note {
+  color: #555555;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
 @media (max-width: 900px) {
   .metric-row {
     grid-template-columns: repeat(2, minmax(130px, 1fr));
