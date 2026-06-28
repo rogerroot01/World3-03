@@ -1,0 +1,89 @@
+body {
+  background: #f7f7f4;
+  color: #202124;
+}
+
+.container-fluid {
+  max-width: 1400px;
+}
+
+.app-header {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin: 18px 0 8px;
+}
+
+.app-logo {
+  height: 42px;
+  width: 42px;
+}
+
+.app-title {
+  font-weight: 700;
+  margin: 0;
+}
+
+.sidebar-panel {
+  background: #ffffff;
+  border: 1px solid #deded8;
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.metric-row {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, minmax(130px, 1fr));
+  margin: 8px 0 14px;
+}
+
+.metric {
+  background: #ffffff;
+  border: 1px solid #deded8;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.metric .label {
+  color: #666666;
+  font-size: 12px;
+}
+
+.metric .value {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.shiny-input-container {
+  margin-bottom: 12px;
+}
+
+.presentation-controls {
+  background: #f7f7f4;
+  border: 1px solid #deded8;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.presentation-controls h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.presentation-controls .btn {
+  margin: 0 4px 8px 0;
+}
+
+@media (max-width: 900px) {
+  .metric-row {
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .metric-row {
+    grid-template-columns: 1fr;
+  }
+}
